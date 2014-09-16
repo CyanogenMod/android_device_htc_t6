@@ -17,5 +17,12 @@
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/t6/t6-vendor.mk)
 
+# FM radio
+PRODUCT_PACKAGES += \
+    qcom.fmradio \
+    libqcomfm_jni \
+    FM2 \
+    FMRecord
+
 # Inherit from t6-common
 $(call inherit-product, device/htc/t6-common/t6-common.mk)
