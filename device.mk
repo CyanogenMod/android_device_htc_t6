@@ -17,6 +17,9 @@
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/t6/t6-vendor.mk)
 
+# local overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # FM radio
 PRODUCT_PACKAGES += \
     FM2 \
